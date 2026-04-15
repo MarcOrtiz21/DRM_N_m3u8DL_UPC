@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "DRM Lab Guesser PRO",
+  "version": "2.0",
+  "description": "Extractor de PSSH mediante EME Hooking para laboratorio.",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["hook.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

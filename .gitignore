@@ -1,0 +1,54 @@
+# Virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+
+# Executables
+*.exe
+
+# Configuration, Logs and Secrets
+config.txt
+.env
+Logs/
+chrome_profile/
+
+# Temporary and Media Files
+*.mkv
+*.mp4
+*.ts
+*.mp3
+*.png
+*.jpg
+*.svg
+_temp_work/
+test_downloads/
+*.html
+
+# Specific script logs and test outputs
+_*.txt
+test_bbb_*.mkv
+frame_*.png
+
+# Exclude random text files except documentation
+*.txt
+!requirements.txt
+!README.md
+
+# Optionally ignore specific test scripts with hardcoded URLs and secrets
+test_api.py
+test_ases.py
+test_bunny.py
+test_script.py
+test_offline_decrypt.py
+test_pssh_extract.py
+test_bbb_debug.py
+test_both.py
+test_dpr.py
+test_tema2.py
+
+# DRM Devices (Confidential)
+*.wvd
+WYD/
+*.pem
+*.der
